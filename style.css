@@ -1,0 +1,74 @@
+body
+{
+  background-color: #e4e2e2;
+}
+.header
+{
+  display: flex;
+  height: 150px;
+}
+.logo
+{
+  display: flex;
+  flex-grow:1;
+  align-items: center;
+  justify-content: flex-end;
+}
+.logo img
+{
+  height: 100px;
+  width: 200px;
+}
+nav
+{
+  display: flex;
+  max-width: 1000px;
+  margin: auto;
+  background-color: #135351;
+  justify-content: center;
+}
+nav a
+{
+  
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+.container
+{
+  max-width: 1000px;
+  height: auto;
+  margin: auto;
+  background-color: white;
+
+}
+.image
+{
+  display:flex;
+  background-color: white;
+  height: 150;
+  justify-content: center;
+}
+.image img
+{
+  width: 100%;
+}
+.service
+{
+  text-align: center;
+}
+.address
+{
+  display: flex;
+  flex-grow: 1;
+}
+.map
+{
+  display: flex;
+  flex-grow: 1;
+}
+footer
+{
+  display: flex;
+  justify-content: center;
+}
