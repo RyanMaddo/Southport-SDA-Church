@@ -16,10 +16,10 @@
 <!--Nav-->
 <nav>
   <ul>
-    <a href="about.html">About us<a/> |
-    <a href="believe.html">What we Believe<a/> |
-    <a href="events.html">Events<a/> |
-    <a href="prayers.html">Prayer Request<a/>
+    <a href="about.html">About us</a> |
+    <a href="believe.html">What we Believe</a> |
+    <a href="events.html">Events</a> |
+    <a href="prayers.html">Prayer Request</a>
   </ul>
 </nav>
 </div>
@@ -27,10 +27,14 @@
 <!--Main Content-->
 <div class="container">
   <div class="image">
-    <img src="images/church.jpg"/>
+    <img class="mySlides" src="images/church.jpg"/>
+    <img class="mySlides" src="images/test.jpg"/>
+    <img class="mySlides" src="images/logo.png"/>
+    <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
   </div>
 
-  <div class="welcome"</h1>
+  <div class="welcome">
     <h1>Welcome to our site!</h1>
     <p style="padding: 20px;">Welcome to the Southport Adventist Fellowship website.  Whether you are visiting our church or just browsing this site,
       we want you to feel welcome. Please feel free to explore the different sections and if you have any questions then it would be our delight for you to get in contact.</p>
@@ -49,7 +53,7 @@
    <p>We have plenty of other fellowships and activities during the week. Please contact us for details.</p>
  </div>
  </div>
- <h1 style="text-align:center;"> Where to find us?</h1>
+ <!-- <h1 style="text-align:center;"> Where to find us?</h1>
  <div class="address">
    <div style="display: flex; flex-grow: 1; justify-content: flex-end;">
      <ul>
@@ -63,11 +67,31 @@
  <div style="flex-grow:1;">
    <iframe src="https://goo.gl/fXotdM" width="300" height="250" frameborder="0" style="border:0; padding-left: 50px; padding-bottom: 50px;" allowfullscreen></iframe>
  </div>
- </div>
+</div> -->
 </div>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
 
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length} ;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    x[slideIndex-1].style.display = "block";
+}
+</script>
 <!--footer -->
-<footer>Made By Ryan Maddock</footer>
+<footer>
+  Made By Ryan Maddock
+</footer>
 
 </body>
 </html>
